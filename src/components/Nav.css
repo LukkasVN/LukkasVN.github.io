@@ -1,0 +1,136 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: var(--bg);
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease;
+}
+
+.nav.nav-hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-solid) 50%, transparent);
+}
+
+.nav-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  height: 76px;
+}
+
+.avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: border-color 0.15s;
+}
+
+.avatar:hover,
+.avatar:focus-visible {
+  border-color: var(--accent-solid);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-dim);
+  overflow-x: auto;
+  scrollbar-width: none;
+  flex: 1;
+}
+
+.navlinks::-webkit-scrollbar {
+  display: none;
+}
+
+.navlinks a {
+  flex-shrink: 0;
+  padding: 8px 14px;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius);
+  white-space: nowrap;
+  transition: border-color 0.15s, color 0.15s, background-color 0.15s;
+}
+
+.navlinks a:hover,
+.navlinks a:focus-visible {
+  color: var(--accent-solid);
+  border-color: var(--accent-solid);
+  background: var(--surface);
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: var(--border);
+  border-radius: var(--radius);
+  padding: 5px 9px;
+  font-size: 10.5px;
+  color: var(--text-faint);
+  flex-shrink: 0;
+  transition: border-color 0.15s;
+}
+
+.lang-toggle:hover {
+  border-color: var(--accent-solid);
+}
+
+.lang-toggle .active {
+  color: var(--accent-solid);
+}
+
+.lang-sep {
+  color: var(--line);
+}
+
+@media (max-width: 760px) {
+  .nav-inner {
+    height: 64px;
+    gap: 16px;
+  }
+  .avatar {
+    width: 38px;
+    height: 38px;
+  }
+  .navlinks {
+    gap: 6px;
+    font-size: 11px;
+  }
+  .navlinks a {
+    padding: 6px 11px;
+  }
+}
