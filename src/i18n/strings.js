@@ -16,6 +16,7 @@ export const strings = {
       roles: ['Unity C#', 'Unreal C++', 'Tools & Prototyping', 'Game Systems'],
       ctaPrimary: 'Get in touch',
       ctaGhost: 'See the work',
+      wipRibbon: 'Work in Progress',
     },
     bio: {
       label: 'Profile',
@@ -114,6 +115,7 @@ export const strings = {
       roles: ['Unity C#', 'Unreal C++', 'Herramientas y Prototipado', 'Sistemas de Juego'],
       ctaPrimary: 'Contáctame',
       ctaGhost: 'Mis Proyectos',
+      wipRibbon: 'En Construcción',
     },
     bio: {
       label: 'Perfil',
@@ -126,7 +128,6 @@ export const strings = {
       stats: [
         { n: '21+', label: 'Sistemas' },
         { n: '13', label: 'Game jams' },
-        { n: '10+', label: 'Prototipos' },
         { n: '2', label: 'Motores' },
       ],
       publishedLabel: 'Juegos Autopublicados',

@@ -11,6 +11,7 @@ export default function Hero() {
   return (
     <header className="hero">
       <HeroVideoBackground />
+      <div className="wip-ribbon mono">{t.wipRibbon}</div>
       <div className="wrap hero-inner">
         <div className="eyebrow mono">{t.eyebrow}</div>
         <h1>Lucas Varela Negro</h1>
