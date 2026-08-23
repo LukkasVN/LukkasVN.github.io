@@ -92,6 +92,9 @@ export default function Hero() {
   );
 }
 
+const GIF_SLIDE_DURATION = 14000;
+const VIDEO_SLIDE_DURATION = 60000;
+
 function HeroVideoBackground() {
   const [active, setActive] = useState(0);
   const [ready, setReady] = useState(false);
@@ -102,11 +105,14 @@ function HeroVideoBackground() {
   }, []);
 
   useEffect(() => {
-    const id = setInterval(() => {
+    const currentSlide = heroPlaylist[active];
+    const duration =
+      currentSlide.type === 'youtube' ? VIDEO_SLIDE_DURATION : GIF_SLIDE_DURATION;
+    const id = setTimeout(() => {
       setActive((a) => (a + 1) % heroPlaylist.length);
-    }, 14000);
-    return () => clearInterval(id);
-  }, []);
+    }, duration);
+    return () => clearTimeout(id);
+  }, [active]);
 
   return (
     <div className="hero-video-bg" aria-hidden="true">
