@@ -18,7 +18,12 @@ export default function Projects() {
         <h2>{t.heading}</h2>
         <div className="projects-grid">
           {pageItems.map((project) => (
-            <ProjectCard key={project.id} project={project} mediaFallback={t.mediaFallback} />
+            <ProjectCard
+              key={project.id}
+              project={project}
+              mediaFallback={t.mediaFallback}
+              openSourceLabel={t.openSourceLabel}
+            />
           ))}
         </div>
         <Pagination page={page} totalPages={totalPages} onPrev={onPrev} onNext={onNext} />
@@ -27,10 +32,16 @@ export default function Projects() {
   );
 }
 
-function ProjectCard({ project, mediaFallback }) {
+function ProjectCard({ project, mediaFallback, openSourceLabel }) {
   return (
     <div className="proj-card">
-      <div className="proj-thumb">
+      <a
+        className="proj-thumb"
+        href={project.links[0]?.href}
+        target="_blank"
+        rel="noreferrer"
+        aria-label={project.title}
+      >
         {project.media ? (
           isVideoSrc(project.media) ? (
             <video src={project.media} autoPlay loop muted playsInline />
@@ -45,16 +56,26 @@ function ProjectCard({ project, mediaFallback }) {
         )}
         <div className="mark tr" />
         <div className="mark br" />
-      </div>
+      </a>
       <div className="proj-body">
+        {project.date && <div className="proj-date mono">{project.date}</div>}
         <h3>{project.title}</h3>
         <p>{project.description}</p>
         <div className="proj-links mono">
-          {project.links.map((link) => (
-            <a key={link.label} href={link.href}>
-              {link.label}
-            </a>
-          ))}
+          {project.links.map((link) => {
+            const isRepo = link.href.includes('github.com');
+            return (
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noreferrer"
+                className={isRepo ? 'repo-badge' : undefined}
+              >
+                {isRepo ? `${openSourceLabel} \u2197` : link.label}
+              </a>
+            );
+          })}
         </div>
       </div>
     </div>

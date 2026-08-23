@@ -50,6 +50,7 @@ export const strings = {
       label: 'Catalog',
       heading: 'Projects',
       mediaFallback: 'media',
+      openSourceLabel: 'Open Source',
     },
     gamejams: {
       label: '13 jams completed',
@@ -149,6 +150,7 @@ export const strings = {
       label: 'Catálogo',
       heading: 'Proyectos',
       mediaFallback: 'contenido',
+      openSourceLabel: 'Open Source',
     },
     gamejams: {
       label: '13 jams completados',

@@ -30,7 +30,13 @@ export default function GameJams() {
 function JamCard({ jam, t }) {
   return (
     <div className="jam-card">
-      <div className="jam-thumb">
+      <a
+        className="jam-thumb"
+        href={jam.links[0]?.href}
+        target="_blank"
+        rel="noreferrer"
+        aria-label={jam.title}
+      >
         {jam.media ? (
           isVideoSrc(jam.media) ? (
             <video src={jam.media} autoPlay loop muted playsInline />
@@ -43,7 +49,7 @@ function JamCard({ jam, t }) {
             <span className="mono">{t.mediaFallback}</span>
           </>
         )}
-      </div>
+      </a>
       <div className="jam-body">
         <div className="jam-meta mono">
           <span>{jam.jam}</span>
@@ -73,7 +79,7 @@ function JamCard({ jam, t }) {
         )}
         <div className="jam-links mono">
           {jam.links.map((link) => (
-            <a key={link.label} href={link.href}>
+            <a key={link.label} href={link.href} target="_blank" rel="noreferrer">
               {link.label}
             </a>
           ))}
