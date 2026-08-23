@@ -291,7 +291,7 @@ export const projects = {
       title: 'LabRat: Nobody',
       date: 'June 2023',
       description:
-        'My very first game project: a puzzle-platformer prototype that tells its story through ambient narrative, built to show what the finished game could look like.',
+        'My very first game project: a puzzle-platformer prototype that tells its story through ambient narrative, built to show what the finished game could look like and to serve as a final proyect.',
       mediaTag: 'IMG',
       media: 'https://img.itch.zone/aW1nLzEyNTUzNTQ2LmpwZw==/original/whbdMT.jpg',
       links: [{ label: 'Itch.io', href: 'https://lukkasvn.itch.io/labrat-nobody-demo' }],
@@ -300,20 +300,20 @@ export const projects = {
   es: [
     {
       id: 'showcase-22',
-      title: '22 \u00b7 Sistema Modular de Objetos Destructibles',
+      title: '22 \u00b7 Sistema Modular de Destructibles',
       date: 'May 2026',
       description:
-        'Objetos destructibles basados en datos, con daño, feedback visual, generación opcional de escombros y soporte de respawn.',
+        'Objetos destructibles data-driven, con daño, feedback visual, spawn opcional de debris y soporte de respawn.',
       mediaTag: 'GIF',
       media: destructiblesSystemGif,
       links: [{ label: 'Repo', href: `${SHOWCASE_BASE}/22_Modular_Destructibles_System` }],
     },
     {
       id: 'showcase-21',
-      title: '21 \u00b7 Sistema Modular de Objetos Soltables',
+      title: '21 \u00b7 Sistema Modular de Drops',
       date: 'Abr 2026',
       description:
-        'Un sistema de objetos soltables totalmente basado en datos, con dispersión física, flotación suave y recogida por trigger.',
+        'Un sistema de drops totalmente data-driven, con dispersión física, flotación suave y recogida por trigger.',
       mediaTag: 'GIF',
       media: droppablesSystemGif,
       links: [{ label: 'Repo', href: `${SHOWCASE_BASE}/21_Modular_Droppables_System` }],
@@ -564,7 +564,7 @@ export const projects = {
       title: 'LabRat: Nobody',
       date: 'Junio 2023',
       description:
-        'Mi primer proyecto de videojuego: un prototipo de puzles y plataformas que cuenta su historia a través de narrativa ambiental, pensado para mostrar cómo sería el juego terminado.',
+        'Mi primer videojuego desarrollado: un prototipo de puzles y plataformas que cuenta su historia a través de narrativa ambiental, pensado para mostrar cómo sería el juego terminado y como trabajo de fin de ciclo.',
       mediaTag: 'IMG',
       media: 'https://img.itch.zone/aW1nLzEyNTUzNTQ2LmpwZw==/original/whbdMT.jpg',
       links: [{ label: 'Itch.io', href: 'https://lukkasvn.itch.io/labrat-nobody-demo' }],

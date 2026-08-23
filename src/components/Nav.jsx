@@ -63,7 +63,6 @@ export default function Nav() {
   const visible = !autoHideEnabled || !scrolled || hovering;
 
   const navLinks = [
-    { href: '#bio', label: t.nav.bio },
     { href: '#demoreels', label: t.nav.demoreels },
     { href: '#projects', label: t.nav.projects },
     { href: '#gamejams', label: t.nav.gamejams },
