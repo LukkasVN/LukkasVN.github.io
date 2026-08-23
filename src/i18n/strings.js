@@ -91,7 +91,7 @@ export const strings = {
       formMessagePlaceholder: 'Tell me about it...',
       submit: 'Send message',
       directEmail: 'Direct email',
-      emailNote: 'Form submissions forward here. Usual reply time is within a day or two.',
+      emailNote: "The form opens a Gmail compose window with everything filled in, just hit send. Usual reply time is within a day or two.",
     },
     pagination: {
       prev: 'Prev',
@@ -190,7 +190,7 @@ export const strings = {
       formMessagePlaceholder: 'Cuéntame...',
       submit: 'Enviar mensaje',
       directEmail: 'Email directo',
-      emailNote: 'Los envíos del formulario llegan aquí. El tiempo de respuesta habitual es de uno o dos días.',
+      emailNote: 'El formulario abre una ventana de Gmail con todo ya rellenado, solo tienes que enviarlo. El tiempo de respuesta habitual es de uno o dos días.',
     },
     pagination: {
       prev: 'Anterior',

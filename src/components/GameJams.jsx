@@ -50,10 +50,13 @@ function JamCard({ jam, t }) {
           <span>{jam.date}</span>
         </div>
         <h3>{jam.title}</h3>
-        <p className="jam-theme mono">
-          {t.theme}: {jam.theme}
-          {jam.duration && ` · ${t.durationLabel}: ${jam.duration}`}
-        </p>
+        {(jam.theme || jam.duration) && (
+          <p className="jam-theme mono">
+            {jam.theme && `${t.theme}: ${jam.theme}`}
+            {jam.theme && jam.duration && ' · '}
+            {jam.duration && `${t.durationLabel}: ${jam.duration}`}
+          </p>
+        )}
         <p>{jam.description}</p>
         {jam.credits && jam.credits.length > 0 && (
           <div className="jam-credits">
