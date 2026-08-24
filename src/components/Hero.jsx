@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { demoReels } from '../data/demoreels';
+import { socials } from '../data/socials';
 import { useLanguage } from '../i18n/LanguageContext';
 import { strings } from '../i18n/strings';
 import baseMobilityGif from '../assets/projects/01-base-mobility.gif';
@@ -24,6 +25,7 @@ import radioStationManagerGif from '../assets/projects/19-radio-station-manager.
 import objectPlacingSystemGif from '../assets/projects/20-object-placing-system.gif';
 import droppablesSystemGif from '../assets/projects/21-droppables-system.gif';
 import destructiblesSystemGif from '../assets/projects/22-destructibles-system.gif';
+import { socialIcons } from './SocialIcons';
 import './Hero.css';
 
 const showcaseGifs = [
@@ -78,6 +80,25 @@ export default function Hero() {
               {role}
             </span>
           ))}
+        </div>
+        <div className="hero-socials">
+          {socials.map((social) => {
+            const Icon = socialIcons[social.id];
+            return (
+              <a
+                key={social.id}
+                className="hero-social-icon"
+                href={social.href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={social.name}
+                title={social.name}
+              >
+                <Icon />
+                {social.id === 'linktree' && <span className="hero-social-tag mono">HUB</span>}
+              </a>
+            );
+          })}
         </div>
         <div className="hero-cta">
           <a className="btn btn-primary" href="#contact">

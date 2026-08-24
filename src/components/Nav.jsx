@@ -67,7 +67,6 @@ export default function Nav() {
     { href: '#projects', label: t.nav.projects },
     { href: '#gamejams', label: t.nav.gamejams },
     { href: '#devlog', label: t.nav.devlog },
-    { href: '#socials', label: t.nav.socials },
     { href: '#services', label: t.nav.services },
     { href: '#contact', label: t.nav.contact },
   ];

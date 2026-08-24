@@ -143,12 +143,56 @@
 .roles-line {
   font-size: 17px;
   color: var(--text-dim);
-  margin-bottom: 44px;
+  margin-bottom: 32px;
 }
 
 .roles-line .dot {
   color: var(--accent-solid);
   margin: 0 10px;
+}
+
+.hero-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.hero-social-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  transition: transform 0.15s ease;
+}
+
+.hero-social-icon:hover,
+.hero-social-icon:focus-visible {
+  transform: translateY(-3px);
+}
+
+.hero-social-tag {
+  position: absolute;
+  bottom: -6px;
+  right: -10px;
+  font-size: 8px;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  color: var(--text-faint);
+  background: var(--bg);
+  border: var(--border);
+  border-radius: var(--radius);
+  padding: 3px 5px;
+  pointer-events: none;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.hero-social-icon:hover .hero-social-tag,
+.hero-social-icon:focus-visible .hero-social-tag {
+  color: var(--accent-solid);
+  border-color: var(--accent-solid);
 }
 
 .hero-cta {
@@ -186,5 +230,8 @@
   }
   .tagline {
     font-size: 22px;
+  }
+  .hero-socials {
+    gap: 12px;
   }
 }
