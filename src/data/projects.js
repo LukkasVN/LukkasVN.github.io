@@ -20,12 +20,23 @@ import radioStationManagerGif from '../assets/projects/19-radio-station-manager.
 import objectPlacingSystemGif from '../assets/projects/20-object-placing-system.gif';
 import droppablesSystemGif from '../assets/projects/21-droppables-system.gif';
 import destructiblesSystemGif from '../assets/projects/22-destructibles-system.gif';
+import fpsWeaponSystemGif from '../assets/projects/23-fps-weapon-system.gif';
 
 const SHOWCASE_BASE =
   'https://github.com/LukkasVN/LVN-Gameplay-Programming-Showcase/tree/main';
 
 export const projects = {
   en: [
+    {
+      id: 'showcase-23',
+      title: '23 \u00b7 FPS Weapon System (Self-Animated / Procedural)',
+      date: 'Sep 2026',
+      description:
+        'A modular, interface-driven FPS weapon system with data-driven weapon definitions, hip/aim offsets, recoil, and ammo validation, left open for further feel tuning.',
+      mediaTag: 'GIF',
+      media: fpsWeaponSystemGif,
+      links: [{ label: 'Repo', href: `${SHOWCASE_BASE}/23_FPS_Self-Animated_Weapon_System` }],
+    },
     {
       id: 'showcase-22',
       title: '22 \u00b7 Modular Destructibles System',
@@ -298,6 +309,16 @@ export const projects = {
     },
   ],
   es: [
+    {
+      id: 'showcase-23',
+      title: '23 \u00b7 Sistema de Armas FPS (Autoanimado / Procedural)',
+      date: 'Sep 2026',
+      description:
+        'Un sistema de armas FPS modular y basado en interfaces, con definiciones de armas data-driven, offsets de cadera/mira, retroceso y validación de munición, dejado abierto para ajuste de feel.',
+      mediaTag: 'GIF',
+      media: fpsWeaponSystemGif,
+      links: [{ label: 'Repo', href: `${SHOWCASE_BASE}/23_FPS_Self-Animated_Weapon_System` }],
+    },
     {
       id: 'showcase-22',
       title: '22 \u00b7 Sistema Modular de Destructibles',
