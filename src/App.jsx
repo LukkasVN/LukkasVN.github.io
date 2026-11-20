@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import Bio from './components/Bio';
 import DemoReels from './components/DemoReels';
 import Projects from './components/Projects';
+import Published from './components/Published';
 import GameJams from './components/GameJams';
 import Devlog from './components/Devlog';
 import Services from './components/Services';
@@ -15,6 +16,7 @@ export default function App() {
       <Nav />
       <Hero />
       <Bio />
+      <Published />
       <DemoReels />
       <Projects />
       <GameJams />

@@ -3,6 +3,7 @@ export const strings = {
     nav: {
       demoreels: 'Demo Reels',
       projects: 'Projects',
+      published: 'Published',
       gamejams: 'Game Jams',
       devlog: 'Devlog',
       socials: 'Socials',
@@ -30,9 +31,7 @@ export const strings = {
         { n: '10+', label: 'Prototypes' },
         { n: '2', label: 'Engines' },
       ],
-      publishedLabel: 'Self-published Games',
       coreSkillsLabel: 'Core Skills',
-      stamp: 'OPEN TO WORK',
       fieldNotes: 'FIELD NOTES',
       basedIn: 'BASED IN',
       basedInValue: 'Galicia, ES',
@@ -51,6 +50,11 @@ export const strings = {
       heading: 'Projects',
       mediaFallback: 'media',
       openSourceLabel: 'Open Source',
+    },
+    published: {
+      label: 'Shipped',
+      heading: 'Self-Published',
+      storeCta: 'Store page',
     },
     gamejams: {
       label: '13 jams completed',
@@ -103,6 +107,7 @@ export const strings = {
     nav: {
       demoreels: 'Demo Reels',
       projects: 'Proyectos',
+      published: 'Publicados',
       gamejams: 'Game Jams',
       devlog: 'Devlog',
       socials: 'Redes',
@@ -130,9 +135,7 @@ export const strings = {
         { n: '10+', label: 'Prototipos' },
         { n: '2', label: 'Motores' },
       ],
-      publishedLabel: 'Juegos Autopublicados',
       coreSkillsLabel: 'Habilidades Clave',
-      stamp: 'OPEN TO WORK',
       fieldNotes: 'NOTAS DE CAMPO',
       basedIn: 'UBICACIÓN',
       basedInValue: 'Galicia, ES',
@@ -151,6 +154,11 @@ export const strings = {
       heading: 'Proyectos',
       mediaFallback: 'contenido',
       openSourceLabel: 'Open Source',
+    },
+    published: {
+      label: 'Lanzados',
+      heading: 'Autopublicados',
+      storeCta: 'Ver en la tienda',
     },
     gamejams: {
       label: '13 jams completados',

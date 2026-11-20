@@ -1,0 +1,85 @@
+/* Narrow screens: arrows sit in the row under the content, around the counter. */
+.paged {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-areas:
+    'content content content'
+    'prev status next';
+  align-items: center;
+  column-gap: 18px;
+}
+
+.paged-content {
+  grid-area: content;
+  min-width: 0;
+}
+
+.paged-status {
+  grid-area: status;
+  margin-top: 24px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 11px;
+  color: var(--text-faint);
+  letter-spacing: 1px;
+}
+
+.paged-prev {
+  grid-area: prev;
+  justify-self: end;
+}
+
+.paged-next {
+  grid-area: next;
+  justify-self: start;
+}
+
+.paged-arrow {
+  margin-top: 24px;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  background: var(--bg);
+  border: var(--border);
+  border-radius: var(--radius);
+  color: var(--text-dim);
+  transition: border-color 0.15s, color 0.15s, opacity 0.15s;
+}
+
+.paged-arrow:hover:not(:disabled),
+.paged-arrow:focus-visible {
+  border-color: var(--accent-solid);
+  color: var(--text);
+}
+
+.paged-arrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* Wide screens: arrows move outside the content, centered on it.
+   The status row is 44px tall (24px margin + 20px), so the content's
+   vertical center is at (100% - 44px) / 2. */
+@media (min-width: 1180px) {
+  .paged {
+    position: relative;
+  }
+  .paged-arrow {
+    /* Abspos grid items use their grid area as containing block; reset it
+       so the arrows position against the whole .paged box. */
+    grid-area: auto;
+    position: absolute;
+    top: calc((100% - 44px) / 2);
+    transform: translateY(-50%);
+    margin-top: 0;
+    width: 44px;
+    height: 44px;
+  }
+  .paged-prev {
+    left: -68px;
+  }
+  .paged-next {
+    right: -68px;
+  }
+}

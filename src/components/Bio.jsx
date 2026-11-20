@@ -1,6 +1,5 @@
 import headshot from '../assets/lucas-headshot.jpg';
 import { coreSkills } from '../data/coreSkills';
-import { publishedGames } from '../data/publishedGames';
 import { useLanguage } from '../i18n/LanguageContext';
 import { strings } from '../i18n/strings';
 import './Bio.css';
@@ -34,7 +33,6 @@ export default function Bio() {
                 <span className="v mono">{t.enginesValue}</span>
               </div>
             </div>
-            <div className="stamp mono">{t.stamp}</div>
           </div>
           <div className="bio-text">
             {t.paragraphs.map((paragraph) => (
@@ -57,23 +55,6 @@ export default function Bio() {
                   </span>
                 ))}
               </div>
-            </div>
-            <div className="bio-published">
-              <div className="bio-published-label mono">{t.publishedLabel}</div>
-              {publishedGames.map((game) => (
-                <a
-                  key={game.id}
-                  className="bio-game"
-                  href={game.href}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="bio-game-title">{game.title}</span>
-                  <span className="bio-game-meta mono">
-                    {game.platform} · {game.year}
-                  </span>
-                </a>
-              ))}
             </div>
           </div>
         </div>
