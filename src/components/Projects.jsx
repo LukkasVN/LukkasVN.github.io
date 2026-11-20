@@ -3,7 +3,7 @@ import { usePagination } from '../hooks/usePagination';
 import { useLanguage } from '../i18n/LanguageContext';
 import { strings } from '../i18n/strings';
 import { isVideoSrc } from '../utils/media';
-import Pagination from './Pagination';
+import PagedArrows from './PagedArrows';
 import './Projects.css';
 
 export default function Projects() {
@@ -16,17 +16,18 @@ export default function Projects() {
       <div className="wrap">
         <div className="section-label">{t.label}</div>
         <h2>{t.heading}</h2>
-        <div className="projects-grid">
-          {pageItems.map((project) => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-              mediaFallback={t.mediaFallback}
-              openSourceLabel={t.openSourceLabel}
-            />
-          ))}
-        </div>
-        <Pagination page={page} totalPages={totalPages} onPrev={onPrev} onNext={onNext} />
+        <PagedArrows page={page} totalPages={totalPages} onPrev={onPrev} onNext={onNext}>
+          <div className="projects-grid">
+            {pageItems.map((project) => (
+              <ProjectCard
+                key={project.id}
+                project={project}
+                mediaFallback={t.mediaFallback}
+                openSourceLabel={t.openSourceLabel}
+              />
+            ))}
+          </div>
+        </PagedArrows>
       </div>
     </section>
   );

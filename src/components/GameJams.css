@@ -1,22 +1,25 @@
+#gamejams {
+  --paged-arrow-top: calc((var(--content-max) - 2 * var(--content-padding) - 2px) / 3 * 500 / 630 / 2);
+}
+
 .jams-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1px;
-  background: var(--line);
-  border: var(--border);
 }
 
 .jam-card {
+  flex: 0 0 calc((100% - 2px) / 3);
   background: var(--bg);
+  outline: 1px solid var(--line);
   display: flex;
   flex-direction: column;
-  max-width: 400px;
-  width: 100%;
-  margin: 0 auto;
 }
 
 .jam-thumb {
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 630 / 500;
+  overflow: hidden;
   background: var(--surface);
   position: relative;
   display: flex;
@@ -140,8 +143,14 @@
   border-color: var(--accent-solid);
 }
 
+@media (max-width: 900px) {
+  .jam-card {
+    flex-basis: calc((100% - 1px) / 2);
+  }
+}
+
 @media (max-width: 760px) {
-  .jams-grid {
-    grid-template-columns: 1fr;
+  .jam-card {
+    flex-basis: 100%;
   }
 }

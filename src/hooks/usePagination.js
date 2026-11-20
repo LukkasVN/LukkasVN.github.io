@@ -10,11 +10,11 @@ export function usePagination(items, pageSize) {
   }, [items, page, pageSize]);
 
   function onPrev() {
-    setPage((p) => Math.max(0, p - 1));
+    setPage((p) => (p - 1 + totalPages) % totalPages);
   }
 
   function onNext() {
-    setPage((p) => Math.min(totalPages - 1, p + 1));
+    setPage((p) => (p + 1) % totalPages);
   }
 
   return { page, totalPages, pageItems, onPrev, onNext };

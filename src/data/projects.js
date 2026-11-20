@@ -287,17 +287,6 @@ export const projects = {
       links: [{ label: 'Itch.io', href: 'https://lukkasvn.itch.io/replipaint-prototipo-xuventude-crea' }],
     },
     {
-      id: 'bounce-it',
-      title: 'Bounce It',
-      date: 'Aug 2025',
-      description:
-        'A fast-paced arcade game built around one core rule: keep the ball bouncing. Shipped solo on Steam with Positive reviews and a full skin and progression system.',
-      mediaTag: 'IMG',
-      media:
-        'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3482000/8c045d53bbf6a3bbedc4cdcf8c2a7f0441314c64/header.jpg',
-      links: [{ label: 'Steam', href: 'https://store.steampowered.com/app/3482000/Bounce_IT/' }],
-    },
-    {
       id: 'labrat-nobody',
       title: 'LabRat: Nobody',
       date: 'June 2023',
@@ -568,17 +557,6 @@ export const projects = {
       mediaTag: 'IMG',
       media: 'https://img.itch.zone/aW1nLzIzOTIwNTg4LnBuZw==/original/Y9IRgp.png',
       links: [{ label: 'Itch.io', href: 'https://lukkasvn.itch.io/replipaint-prototipo-xuventude-crea' }],
-    },
-    {
-      id: 'bounce-it',
-      title: 'Bounce It',
-      date: 'Ago 2025',
-      description:
-        'Un juego arcade de ritmo rápido construido en torno a una única regla: mantener la pelota rebotando. Publicado en solitario en Steam, con reseñas positivas y un sistema completo de skins y progresión.',
-      mediaTag: 'IMG',
-      media:
-        'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3482000/8c045d53bbf6a3bbedc4cdcf8c2a7f0441314c64/header.jpg',
-      links: [{ label: 'Steam', href: 'https://store.steampowered.com/app/3482000/Bounce_IT/' }],
     },
     {
       id: 'labrat-nobody',

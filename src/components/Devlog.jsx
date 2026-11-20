@@ -4,7 +4,7 @@ import { usePagination } from '../hooks/usePagination';
 import { useLanguage } from '../i18n/LanguageContext';
 import { strings } from '../i18n/strings';
 import Modal from './Modal';
-import Pagination from './Pagination';
+import PagedArrows from './PagedArrows';
 import './Devlog.css';
 
 export default function Devlog() {
@@ -19,15 +19,16 @@ export default function Devlog() {
       <div className="wrap">
         <div className="section-label">{t.label}</div>
         <h2>{t.heading}</h2>
-        {pageItems.map((entry) => (
-          <DevlogEntry
-            key={entry.id}
-            entry={entry}
-            readEntry={t.readEntry}
-            onOpen={() => setOpenId(entry.id)}
-          />
-        ))}
-        <Pagination page={page} totalPages={totalPages} onPrev={onPrev} onNext={onNext} />
+        <PagedArrows page={page} totalPages={totalPages} onPrev={onPrev} onNext={onNext}>
+          {pageItems.map((entry) => (
+            <DevlogEntry
+              key={entry.id}
+              entry={entry}
+              readEntry={t.readEntry}
+              onOpen={() => setOpenId(entry.id)}
+            />
+          ))}
+        </PagedArrows>
       </div>
 
       {openEntry && (

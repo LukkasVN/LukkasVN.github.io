@@ -24,7 +24,6 @@ export default function PagedArrows({ page, totalPages, onPrev, onNext, children
         type="button"
         className="paged-arrow paged-prev"
         onClick={onPrev}
-        disabled={page === 0}
         aria-label={t.prev}
       >
         <Chevron />
@@ -37,7 +36,6 @@ export default function PagedArrows({ page, totalPages, onPrev, onNext, children
         type="button"
         className="paged-arrow paged-next"
         onClick={onNext}
-        disabled={page === totalPages - 1}
         aria-label={t.next}
       >
         <Chevron flip />

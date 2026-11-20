@@ -3,7 +3,7 @@ import { usePagination } from '../hooks/usePagination';
 import { useLanguage } from '../i18n/LanguageContext';
 import { strings } from '../i18n/strings';
 import { isVideoSrc } from '../utils/media';
-import Pagination from './Pagination';
+import PagedArrows from './PagedArrows';
 import './GameJams.css';
 
 export default function GameJams() {
@@ -16,12 +16,13 @@ export default function GameJams() {
       <div className="wrap">
         <div className="section-label">{t.label}</div>
         <h2>{t.heading}</h2>
-        <div className="jams-grid">
-          {pageItems.map((jam) => (
-            <JamCard key={jam.id} jam={jam} t={t} />
-          ))}
-        </div>
-        <Pagination page={page} totalPages={totalPages} onPrev={onPrev} onNext={onNext} />
+        <PagedArrows page={page} totalPages={totalPages} onPrev={onPrev} onNext={onNext}>
+          <div className="jams-grid">
+            {pageItems.map((jam) => (
+              <JamCard key={jam.id} jam={jam} t={t} />
+            ))}
+          </div>
+        </PagedArrows>
       </div>
     </section>
   );

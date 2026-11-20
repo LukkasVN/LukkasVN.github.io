@@ -1,3 +1,7 @@
+#devlog {
+  --paged-arrow-top: 40px;
+}
+
 .devlog-entry {
   display: grid;
   grid-template-columns: 90px 1fr;
