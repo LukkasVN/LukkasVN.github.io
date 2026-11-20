@@ -88,6 +88,29 @@
   margin-bottom: 0;
 }
 
+.devlog-entry.is-mystery h3,
+.devlog-entry.is-mystery .devlog-body p,
+.devlog-modal-title.is-mystery,
+.devlog-modal-p.is-mystery {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.devlog-entry.is-mystery h3,
+.devlog-modal-title.is-mystery {
+  color: var(--accent-contrast);
+}
+
+.devlog-entry.is-mystery h3 {
+  font-size: 20px;
+}
+
+.devlog-entry.is-mystery .devlog-body p,
+.devlog-modal-p.is-mystery {
+  font-size: 15px;
+}
+
 @media (max-width: 760px) {
   .devlog-entry {
     grid-template-columns: 1fr;

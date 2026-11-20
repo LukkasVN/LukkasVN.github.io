@@ -11,12 +11,13 @@
   --accent-dim: rgba(74, 130, 196, 0.22);
   --accent-contrast: #EAF2FC;
   --accent-solid: #4A82C4;
+  --navy-rgb: 27, 51, 82;
   --success: #4E9F6E;
   --success-dim: rgba(78, 159, 110, 0.25);
 
-  --font-display: 'Space Grotesk', sans-serif;
-  --font-body: 'Inter', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-display: 'Lilita One', 'Fredoka', sans-serif;
+  --font-body: 'Fredoka', sans-serif;
+  --font-mono: 'Fredoka', sans-serif;
 
   --content-max: 1040px;
   --content-padding: 28px;

@@ -1,5 +1,22 @@
 @import './tokens.css';
 
+@font-face {
+  font-family: 'Lilita One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/lilita-one/lilita-one-latin-400-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('../assets/fonts/fredoka/fredoka-latin-wght-normal.woff2') format('woff2');
+  size-adjust: 112%;
+}
+
 *,
 *::before,
 *::after {
@@ -10,6 +27,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-synthesis-weight: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -93,7 +111,9 @@ h2.section-title {
   font-weight: 600;
   font-size: 26px;
   margin-bottom: 32px;
-  letter-spacing: -0.5px;
+  letter-spacing: 0.3px;
+  -webkit-text-stroke: 0.22em #000;
+  paint-order: stroke fill;
 }
 
 .btn {

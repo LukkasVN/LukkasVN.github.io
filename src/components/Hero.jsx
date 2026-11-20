@@ -70,7 +70,6 @@ export default function Hero() {
     <header className="hero">
       <HeroVideoBackground />
       <div className="wrap hero-inner">
-        <div className="eyebrow mono">{t.eyebrow}</div>
         <h1>Lucas Varela Negro</h1>
         <p className="tagline">{t.tagline}</p>
         <div className="roles-line mono">
@@ -101,11 +100,14 @@ export default function Hero() {
           })}
         </div>
         <div className="hero-cta">
-          <a className="btn btn-primary" href="#contact">
-            {t.ctaPrimary}
-          </a>
           <a className="btn btn-ghost" href="#projects">
             {t.ctaGhost}
+          </a>
+          <a className="btn btn-ghost" href="#devlog">
+            {t.ctaDevlog}
+          </a>
+          <a className="btn btn-primary" href="#contact">
+            {t.ctaPrimary}
           </a>
         </div>
       </div>

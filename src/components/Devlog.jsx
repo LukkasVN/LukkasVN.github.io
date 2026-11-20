@@ -37,9 +37,11 @@ export default function Devlog() {
             <span className="idx">#{openEntry.id}</span>
             {openEntry.date}
           </div>
-          <h3 className="devlog-modal-title">{openEntry.title}</h3>
+          <h3 className={`devlog-modal-title${openEntry.mystery ? ' is-mystery' : ''}`}>
+            {openEntry.title}
+          </h3>
           {openEntry.content.map((paragraph, i) => (
-            <p className="devlog-modal-p" key={i}>
+            <p className={`devlog-modal-p${openEntry.mystery ? ' is-mystery' : ''}`} key={i}>
               {paragraph}
             </p>
           ))}
@@ -51,7 +53,7 @@ export default function Devlog() {
 
 function DevlogEntry({ entry, readEntry, onOpen }) {
   return (
-    <div className="devlog-entry">
+    <div className={`devlog-entry${entry.mystery ? ' is-mystery' : ''}`}>
       <div className="devlog-meta mono">
         <span className="idx">#{entry.id}</span>
         {entry.date}

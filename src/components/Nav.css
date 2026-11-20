@@ -1,4 +1,8 @@
 .nav {
+  --nav-btn-bg: rgba(16, 30, 50, 0.75);
+  --nav-btn-bg-hover: rgba(16, 30, 50, 1);
+  --nav-btn-border: rgba(74, 130, 196, 0.14);
+  --nav-btn-text: rgba(222, 227, 234, 0.72);
   position: fixed;
   top: 0;
   left: 0;
@@ -46,10 +50,10 @@
   height: 34px;
   display: grid;
   place-items: center;
-  background: none;
-  border: 1px solid var(--line-soft);
+  background: var(--nav-btn-bg);
+  border: 1px solid var(--nav-btn-border);
   border-radius: var(--radius);
-  color: var(--text-dim);
+  color: var(--nav-btn-text);
   transition: border-color 0.15s, color 0.15s, background-color 0.15s;
 }
 
@@ -57,7 +61,7 @@
 .nav-top:focus-visible {
   color: var(--accent-solid);
   border-color: var(--accent-solid);
-  background: var(--surface);
+  background: var(--nav-btn-bg-hover);
 }
 
 .avatar {
@@ -105,8 +109,10 @@
 .navlinks a {
   flex-shrink: 0;
   padding: 8px 14px;
-  border: 1px solid var(--line-soft);
+  background: var(--nav-btn-bg);
+  border: 1px solid var(--nav-btn-border);
   border-radius: var(--radius);
+  color: var(--nav-btn-text);
   white-space: nowrap;
   transition: border-color 0.15s, color 0.15s, background-color 0.15s;
 }
@@ -115,15 +121,15 @@
 .navlinks a:focus-visible {
   color: var(--accent-solid);
   border-color: var(--accent-solid);
-  background: var(--surface);
+  background: var(--nav-btn-bg-hover);
 }
 
 .lang-toggle {
   display: flex;
   align-items: center;
   gap: 5px;
-  background: none;
-  border: var(--border);
+  background: var(--nav-btn-bg);
+  border: 1px solid var(--nav-btn-border);
   border-radius: var(--radius);
   padding: 5px 9px;
   font-size: 10.5px;

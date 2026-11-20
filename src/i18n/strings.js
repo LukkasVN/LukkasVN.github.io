@@ -12,22 +12,22 @@ export const strings = {
       top: 'Back to top',
     },
     hero: {
-      eyebrow: 'Remote · Hybrid · On-site',
       tagline: 'Gameplay Programmer',
       roles: ['Unity C#', 'Unreal C++', 'Tools & Prototyping', 'Game Systems'],
       ctaPrimary: 'Get in touch',
       ctaGhost: 'See the work',
+      ctaDevlog: 'Devlog',
     },
     bio: {
       label: 'Profile',
       heading: 'About',
       paragraphs: [
-        "Hi, I'm Lucas. I started programming in 2021 with games already in mind, that was the plan from day one, and three years later I'm still at it. What really gets me is modularity: taking a complex problem apart piece by piece and figuring out how those pieces hook into each other until the mechanics click.",
+        "Hi, I'm Lucas. I started programming in 2021 with games already in mind, that was the plan from day one, and five years later I'm still at it. What really gets me is modularity: taking a complex problem apart piece by piece and figuring out how those pieces hook into each other until the mechanics click.",
         "Most of my time in-engine has been Unity and Unreal, though I adapt to whatever a project needs. Alongside my own work I did a one-month trial as a game tester at Tenebris Pictura, and mentored a Mixed Reality student project at Politécnico de Lugo, Proxecto Rexuben, from the ground up to a working prototype for FP Innova. For the past two years I've also been building as an indie developer through game jams, plus one free test project shipped on Steam.",
         "Right now I'm looking for a role inside a game studio, while continuing to develop my own games and take on development and service work on the side. Cliché as it sounds, this is genuinely what I want to be doing, games, and the systems underneath them.",
       ],
       stats: [
-        { n: '21+', label: 'Game Systems' },
+        { n: '22+', label: 'Game Systems' },
         { n: '13', label: 'Game jams' },
         { n: '10+', label: 'Prototypes' },
         { n: '2', label: 'Engines' },
@@ -130,22 +130,22 @@ export const strings = {
       top: 'Volver arriba',
     },
     hero: {
-      eyebrow: 'Remoto · Híbrido · Presencial',
       tagline: 'Gameplay Programmer',
       roles: ['Unity C#', 'Unreal C++', 'Herramientas y Prototipado', 'Sistemas de Juego'],
       ctaPrimary: 'Contáctame',
       ctaGhost: 'Mis Proyectos',
+      ctaDevlog: 'Devlog',
     },
     bio: {
       label: 'Perfil',
       heading: 'Sobre mí',
       paragraphs: [
-        'Hola, soy Lucas. Empecé a programar en 2021 ya con los videojuegos en mente, era el plan desde el primer día, y tres años después sigo en ello. Lo que de verdad me engancha es la modularidad: desmontar un problema complejo pieza a pieza y descubrir cómo esas piezas encajan entre sí hasta que las mecánicas hacen clic.',
+        'Hola, soy Lucas. Empecé a programar en 2021 ya con los videojuegos en mente, era el plan desde el primer día, y cinco años después sigo en ello. Lo que de verdad me engancha es la modularidad: desmontar un problema complejo pieza a pieza y descubrir cómo esas piezas encajan entre sí hasta que las mecánicas hacen clic.',
         'La mayor parte de mi tiempo en motor ha sido en Unity y Unreal, aunque me adapto a lo que cada proyecto necesite. Además de mis propios proyectos, hice una prueba de un mes como tester en Tenebris Pictura, y fui mentor de un proyecto de Realidad Mixta para estudiantes del Politécnico de Lugo, Proxecto Rexuben, guiándolo desde cero hasta un prototipo funcional para FP Innova. Durante los últimos dos años también he estado desarrollando como indie a través de game jams, además de un proyecto de prueba publicado gratis en Steam.',
         'Ahora mismo busco un puesto dentro de un estudio de videojuegos, mientras sigo desarrollando mis propios juegos y aceptando trabajos de desarrollo y servicios por encargo. Aunque suene tópico, esto es de verdad lo que quiero estar haciendo, videojuegos, y los sistemas que hay detrás.',
       ],
       stats: [
-        { n: '21+', label: 'Sistemas' },
+        { n: '22+', label: 'Sistemas' },
         { n: '13', label: 'Game jams' },
         { n: '10+', label: 'Prototipos' },
         { n: '2', label: 'Motores' },

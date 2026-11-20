@@ -10,6 +10,7 @@ export default function Published() {
   const t = strings[lang].published;
   const { page, totalPages, pageItems, onPrev, onNext } = usePagination(publishedGames, 1);
   const game = pageItems[0];
+  const coverImage = <img src={game.cover} alt={game.mystery ? '' : game.title} loading="lazy" />;
 
   return (
     <section id="published" className="section">
@@ -17,31 +18,50 @@ export default function Published() {
         <div className="section-label">{t.label}</div>
         <h2>{t.heading}</h2>
         <PagedArrows page={page} totalPages={totalPages} onPrev={onPrev} onNext={onNext}>
-          <article key={game.id} className="published-entry">
-            <a
-              className="published-cover"
-              href={game.href}
-              target="_blank"
-              rel="noreferrer"
-              aria-label={game.title}
-            >
-              <img src={game.cover} alt={game.title} loading="lazy" />
-            </a>
+          <article
+            key={game.id}
+            className={`published-entry${game.mystery ? ' is-mystery' : ''}`}
+          >
+            {game.href ? (
+              <a
+                className="published-cover"
+                href={game.href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={game.title}
+              >
+                {coverImage}
+              </a>
+            ) : (
+              <div className="published-cover">{coverImage}</div>
+            )}
             <div className="published-body">
               <div className="published-meta mono">
-                <span>{game.platform} · {game.year}</span>
+                <span>
+                  {game.platform} · {game.year[lang]}
+                </span>
                 <span className="published-price">{game.price[lang]}</span>
               </div>
               <h3>{game.title}</h3>
               <p>{game.description[lang]}</p>
-              <a
-                className="published-cta mono"
-                href={game.href}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {t.storeCta} ↗
-              </a>
+              {game.href ? (
+                <a
+                  className="published-cta mono"
+                  href={game.href}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {t.storeCta} ↗
+                </a>
+              ) : (
+                <div className="published-links mono">
+                  {game.links.map((link) => (
+                    <a key={link.label} href={link.href} target="_blank" rel="noreferrer">
+                      {link.label} ↗
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
           </article>
         </PagedArrows>
