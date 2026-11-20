@@ -102,6 +102,19 @@ export const strings = {
       prev: 'Prev',
       next: 'Next',
     },
+    cookies: {
+      title: 'Cookies',
+      text: 'This site uses Google Analytics to see how people find it. Its cookies are only set if you allow them.',
+      accept: 'Accept all',
+      reject: 'Reject all',
+      customize: 'Customize',
+      save: 'Save choice',
+      settings: 'Cookie settings',
+      necessary: 'Necessary',
+      necessaryDesc: 'Your language and this choice, stored in your browser. Always on.',
+      analytics: 'Analytics',
+      analyticsDesc: 'Google Analytics 4 (_ga, _ga_*), up to 2 years. Visit statistics, no ad features.',
+    },
   },
   es: {
     nav: {
@@ -205,6 +218,19 @@ export const strings = {
     pagination: {
       prev: 'Anterior',
       next: 'Siguiente',
+    },
+    cookies: {
+      title: 'Cookies',
+      text: 'Esta web usa Google Analytics para saber cómo llega la gente a ella. Sus cookies solo se instalan si lo permites.',
+      accept: 'Aceptar todo',
+      reject: 'Rechazar todo',
+      customize: 'Personalizar',
+      save: 'Guardar elección',
+      settings: 'Configurar cookies',
+      necessary: 'Necesarias',
+      necessaryDesc: 'Tu idioma y esta elección, guardados en tu navegador. Siempre activas.',
+      analytics: 'Analítica',
+      analyticsDesc: 'Google Analytics 4 (_ga, _ga_*), hasta 2 años. Estadísticas de visitas, sin funciones publicitarias.',
     },
   },
 };

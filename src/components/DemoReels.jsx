@@ -31,7 +31,7 @@ function ReelCard({ reel, playLabel }) {
       <div className="reel-frame">
         {playing ? (
           <iframe
-            src={`https://www.youtube.com/embed/${reel.youtubeId}?autoplay=1`}
+            src={`https://www.youtube-nocookie.com/embed/${reel.youtubeId}?autoplay=1`}
             title={`${reel.year} Demo Reel`}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen

@@ -9,6 +9,7 @@ import Devlog from './components/Devlog';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ChoiceNotice from './components/ChoiceNotice';
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
       <Services />
       <Contact />
       <Footer />
+      <ChoiceNotice />
     </>
   );
 }

@@ -142,7 +142,7 @@ function HeroVideoBackground() {
           <iframe
             key={`backdrop-${slide.id}`}
             className={`hero-video-backdrop${ready && i === active ? ' active' : ''}`}
-            src={`https://www.youtube.com/embed/${slide.youtubeId}?autoplay=1&mute=1&loop=1&playlist=${slide.youtubeId}&controls=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&playsinline=1`}
+            src={`https://www.youtube-nocookie.com/embed/${slide.youtubeId}?autoplay=1&mute=1&loop=1&playlist=${slide.youtubeId}&controls=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&playsinline=1`}
             title=""
             tabIndex="-1"
             allow="autoplay; encrypted-media"
@@ -161,7 +161,7 @@ function HeroVideoBackground() {
           <iframe
             key={slide.id}
             className={`hero-video-frame${ready && i === active ? ' active' : ''}`}
-            src={`https://www.youtube.com/embed/${slide.youtubeId}?autoplay=1&mute=1&loop=1&playlist=${slide.youtubeId}&controls=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&playsinline=1`}
+            src={`https://www.youtube-nocookie.com/embed/${slide.youtubeId}?autoplay=1&mute=1&loop=1&playlist=${slide.youtubeId}&controls=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&playsinline=1`}
             title=""
             tabIndex="-1"
             allow="autoplay; encrypted-media"
