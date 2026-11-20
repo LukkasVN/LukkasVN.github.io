@@ -4,7 +4,6 @@ export const devlogEntries = {
       id: '002',
       date: 'Sep 2026',
       title: "I'm back, gamedev is back, let's go",
-      tags: ['Gamedev', 'Motivation', 'Showcase'],
       excerpt:
         "Summer job is done, real time for gamedev is back, and most of it is going straight into my currently unannounced project. Here's what that means for the showcase going forward.",
       content: [
@@ -18,7 +17,6 @@ export const devlogEntries = {
       id: '001',
       date: 'Aug 2026',
       title: 'Deciding to make a portfolio website',
-      tags: ['Portfolio', 'Website', 'Devlog'],
       excerpt:
         'Why I decided to build a proper website to present my intentions and professional profile, instead of just a link dump.',
       content: [
@@ -33,7 +31,6 @@ export const devlogEntries = {
       id: '002',
       date: 'Sep 2026',
       title: 'Estoy de vuelta, el gamedev está de vuelta, vamos allá',
-      tags: ['Gamedev', 'Motivación', 'Showcase'],
       excerpt:
         'El trabajo de verano se acabó, el tiempo de verdad para el gamedev ha vuelto, y casi todo va directo a mi proyecto actualmente sin anunciar. Esto es lo que significa para el showcase de aquí en adelante.',
       content: [
@@ -47,7 +44,6 @@ export const devlogEntries = {
       id: '001',
       date: 'Ago 2026',
       title: 'Por qué decidí hacer una web-portfolio',
-      tags: ['Portfolio', 'Web', 'Devlog'],
       excerpt:
         'Por qué decidí construir una web como es debido para presentar mis intenciones y mi perfil profesional, en lugar de un simple muro de enlaces.',
       content: [

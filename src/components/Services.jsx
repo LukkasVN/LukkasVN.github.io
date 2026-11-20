@@ -17,7 +17,7 @@ export default function Services() {
             <div key={service.title} className="service-card">
               <span className="service-code mono">{String(i + 1).padStart(2, '0')}</span>
               <h3>{service.title}</h3>
-              <p>{service.blurb}</p>
+              <p>{renderHighlights(service.blurb)}</p>
               <div className="service-tags mono">
                 {service.tags.map((tag) => (
                   <span key={tag}>{tag}</span>
@@ -31,5 +31,17 @@ export default function Services() {
         </div>
       </div>
     </section>
+  );
+}
+
+function renderHighlights(text) {
+  return text.split('**').map((part, i) =>
+    i % 2 === 1 ? (
+      <em key={i} className="service-hl">
+        {part}
+      </em>
+    ) : (
+      part
+    )
   );
 }

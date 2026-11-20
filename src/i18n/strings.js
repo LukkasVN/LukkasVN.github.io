@@ -9,6 +9,7 @@ export const strings = {
       socials: 'Socials',
       services: 'Services',
       contact: 'Contact',
+      top: 'Back to top',
     },
     hero: {
       eyebrow: 'Remote · Hybrid · On-site',
@@ -126,6 +127,7 @@ export const strings = {
       socials: 'Redes',
       services: 'Servicios',
       contact: 'Contacto',
+      top: 'Volver arriba',
     },
     hero: {
       eyebrow: 'Remoto · Híbrido · Presencial',

@@ -38,11 +38,6 @@ export default function Devlog() {
             {openEntry.date}
           </div>
           <h3 className="devlog-modal-title">{openEntry.title}</h3>
-          <div className="devlog-tags mono">
-            {openEntry.tags.map((tag) => (
-              <span key={tag}>{tag}</span>
-            ))}
-          </div>
           {openEntry.content.map((paragraph, i) => (
             <p className="devlog-modal-p" key={i}>
               {paragraph}
@@ -63,11 +58,6 @@ function DevlogEntry({ entry, readEntry, onOpen }) {
       </div>
       <div className="devlog-body">
         <h3>{entry.title}</h3>
-        <div className="devlog-tags mono">
-          {entry.tags.map((tag) => (
-            <span key={tag}>{tag}</span>
-          ))}
-        </div>
         <p>{entry.excerpt}</p>
         <button type="button" className="read mono" onClick={onOpen}>
           {readEntry}

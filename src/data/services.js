@@ -3,64 +3,64 @@ export const services = {
     {
       title: 'Game Programming',
       blurb:
-        'End-to-end gameplay systems in Unity C# or Unreal C++, from a single mechanic to a full architecture, using state machines, event-driven systems, and ScriptableObject or data-asset-driven design, built clean, documented, and ready to hand off to your team.',
-      tags: ['Unity C#', 'Unreal C++', 'ScriptableObjects & data assets'],
-    },
-    {
-      title: 'Tools & Editor Scripting',
-      blurb:
-        'Custom Unity Editor tooling, EditorWindows, PropertyDrawers, and custom Inspectors, plus Unreal Editor Utility Widgets and build pipeline scripts, that remove manual, repetitive work from your team\u2019s day, not just your build.',
-      tags: ['Custom EditorWindows', 'PropertyDrawers', 'Build automation'],
+        'Modular game systems and complex behaviours, architected so every piece **plugs in, scales and stays maintainable**. Player controllers, interaction and dialogue frameworks, save and audio pipelines, state-driven mechanics: built in Unity C# or Unreal C++, documented and ready for your team to build on.',
+      tags: ['Unity C#', 'Unreal C++', 'Blueprints', 'State Machines', 'Event-driven Architecture', 'UI Systems', 'ScriptableObjects & Data Assets'],
     },
     {
       title: 'Rapid Prototyping',
       blurb:
-        'Jam-paced prototyping in Unity or Unreal to validate an idea fast, playable in days rather than months, before committing to a full production.',
-      tags: ['Game jam pace', 'Playable in days', 'Unity & Unreal'],
+        'Ideas turned into something **playable in days**, so you can test the fun before committing to production.',
+      tags: ['Unity', 'Unreal Engine', 'Rapid Iteration', 'Playtesting'],
     },
     {
       title: 'VR & Simulator Development',
       blurb:
-        'VR interaction and simulator builds on the Meta All-In-One SDK and Unity\u2019s XR Interaction Toolkit, from first prototype to a polished, presentable build.',
-      tags: ['Meta All-In-One SDK', 'XR Interaction Toolkit', 'Simulators'],
+        'VR interactions and simulators that **feel right in the hand**, from the first prototype to a build ready to show.',
+      tags: ['Meta All-In-One SDK', 'XR Interaction Toolkit', 'Unity'],
     },
     {
       title: 'Tutoring & Training',
       blurb:
-        'Structured Unity C# and Unreal Blueprints training for students or junior teams, from core scripting to full gameplay systems, drawn from real classroom experience.',
-      tags: ['Unity C#', 'Unreal Blueprints', 'Code review'],
+        'Hands-on training for students and junior teams, **from the first script to full gameplay systems**, based on real classroom experience.',
+      tags: ['Unity C#', 'Unreal Blueprints', 'Code Review', 'Mentoring'],
+    },
+    {
+      title: 'Tools & Editor Scripting',
+      blurb:
+        'Editor tools that **take repetitive work off your team**, so the hours go into the game instead of the pipeline.',
+      tags: ['Custom EditorWindows', 'Custom Inspectors', 'PropertyDrawers', 'Editor Utility Widgets', 'Build Automation'],
     },
   ],
   es: [
     {
       title: 'Programación de Videojuegos',
       blurb:
-        'Sistemas de gameplay completos en Unity C# o Unreal C++, desde una sola mecánica hasta una arquitectura entera, usando state machines, sistemas event-driven y diseño basado en ScriptableObjects o data assets, con código limpio, documentado y listo para entregar a tu equipo.',
-      tags: ['Unity C#', 'Unreal C++', 'ScriptableObjects y data assets'],
-    },
-    {
-      title: 'Herramientas y Scripting de Editor',
-      blurb:
-        'Herramientas de Editor de Unity a medida, EditorWindows, PropertyDrawers e Inspectors personalizados, además de Editor Utility Widgets de Unreal y scripts de build pipeline, que eliminan tareas manuales y repetitivas del día a día de tu equipo, no solo de tu build.',
-      tags: ['Custom EditorWindows', 'PropertyDrawers', 'Build automation'],
+        'Sistemas de juego modulares y comportamientos complejos, diseñados para que cada pieza **encaje, escale y siga siendo mantenible**. Controladores de jugador, frameworks de interacción y diálogo, pipelines de guardado y audio, mecánicas basadas en estados: desarrollados en Unity C# o Unreal C++, documentados y listos para que tu equipo construya sobre ellos.',
+      tags: ['Unity C#', 'Unreal C++', 'Blueprints', 'State Machines', 'Arquitectura event-driven', 'Sistemas de UI', 'ScriptableObjects y Data Assets'],
     },
     {
       title: 'Prototipado Rápido',
       blurb:
-        'Prototipos al ritmo de una game jam en Unity o Unreal para validar una idea rápidamente, jugable en días y no en meses, antes de invertir en una producción completa.',
-      tags: ['Ritmo de game jam', 'Jugable en días', 'Unity y Unreal'],
+        'Ideas convertidas en algo **jugable en días**, para comprobar si es divertido antes de invertir en producción.',
+      tags: ['Unity', 'Unreal Engine', 'Iteración rápida', 'Playtesting'],
     },
     {
       title: 'Desarrollo VR y Simuladores',
       blurb:
-        'Interacción VR y simuladores con el Meta All-In-One SDK y el XR Interaction Toolkit de Unity, desde el primer prototipo hasta una build pulida y lista para mostrar.',
-      tags: ['Meta All-In-One SDK', 'XR Interaction Toolkit', 'Simuladores'],
+        'Interacciones VR y simuladores que **se sienten bien en la mano**, desde el primer prototipo hasta una build lista para mostrar.',
+      tags: ['Meta All-In-One SDK', 'XR Interaction Toolkit', 'Unity'],
     },
     {
       title: 'Tutorías y Formación',
       blurb:
-        'Formación estructurada en Unity C# y Unreal Blueprints para estudiantes o equipos junior, desde scripting básico hasta sistemas de gameplay completos, basada en experiencia real dando clases.',
-      tags: ['Unity C#', 'Unreal Blueprints', 'Revisión de código'],
+        'Formación práctica para estudiantes y equipos junior, **desde el primer script hasta sistemas de gameplay completos**, basada en experiencia real dando clases.',
+      tags: ['Unity C#', 'Unreal Blueprints', 'Revisión de código', 'Mentoring'],
+    },
+    {
+      title: 'Herramientas y Scripting de Editor',
+      blurb:
+        'Herramientas de editor que **quitan trabajo repetitivo a tu equipo**, para que las horas vayan al juego y no al pipeline.',
+      tags: ['Custom EditorWindows', 'Custom Inspectors', 'PropertyDrawers', 'Editor Utility Widgets', 'Build Automation'],
     },
   ],
 };

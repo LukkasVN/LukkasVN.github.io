@@ -42,6 +42,12 @@
   max-width: 460px;
 }
 
+.service-hl {
+  font-style: normal;
+  color: var(--text);
+  box-shadow: inset 0 -0.45em 0 var(--accent-dim);
+}
+
 .service-tags {
   display: flex;
   flex-wrap: wrap;

@@ -36,20 +36,6 @@
   margin-bottom: 6px;
 }
 
-.devlog-tags {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 9px;
-  flex-wrap: wrap;
-}
-
-.devlog-tags span {
-  font-size: 9px;
-  color: var(--text-faint);
-  border: var(--border);
-  padding: 2px 7px;
-}
-
 .devlog-body p {
   color: var(--text-dim);
   font-size: 13px;

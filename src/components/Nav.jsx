@@ -75,9 +75,29 @@ export default function Nav() {
   return (
     <nav className={`nav${visible ? '' : ' nav-hidden'}`}>
       <div className="wrap nav-inner">
-        <a className="avatar" href="#bio" aria-label="Back to top">
-          <img src={headshot} alt="" />
-        </a>
+        <div className="nav-start">
+          <a className="avatar" href="#bio" aria-label={t.bio.heading}>
+            <img src={headshot} alt="" />
+          </a>
+          <button
+            type="button"
+            className="nav-top"
+            onClick={() => window.scrollTo({ top: 0 })}
+            aria-label={t.nav.top}
+            title={t.nav.top}
+          >
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+              <path
+                d="M4 11l8-7 8 7M6 9.5V20h4.5v-5.5h3V20H18V9.5"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.7"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
         <div className="navlinks mono">
           {navLinks.map((link) => (
             <a key={link.href} href={link.href}>
